@@ -1,0 +1,41 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5FC;
+    ;
+}
+
+main{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area_de_saida{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 400px;
+    background-color: white;
+    align-items: center;
+    justify-content:center;
+    border-radius: 32px;
+}
+
+.area_de_saida_imagem{
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.area_de_saida_texto{
+    width: 70%;
+    background-color: white;
+}
+
+.area_principal{
+    border: 2px solid red;
+}
