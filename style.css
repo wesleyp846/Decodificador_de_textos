@@ -1,3 +1,4 @@
+ /*
  * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +19,7 @@ main{
     display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 400px;
+    width: 30%;
     background-color: white;
     align-items: center;
     justify-content:center;
@@ -37,5 +38,117 @@ main{
 }
 
 .area_principal{
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 70%;
+    border: 2px solid blue;
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+}
+
+.area_principal input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    width: 80%;
+    border-color: red;
+}
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3F5FC;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.area_de_saida {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 30%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+}
+
+.area_de_saida_imagem {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.area_de_saida_texto {
+    width: 70%;
+    background-color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+.area_principal {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 70%;
+    align-items: center; /* Centraliza os itens na coluna */
+    /* justify-content: center; Centraliza os itens na coluna */
+    border-radius: 32px;
+}
+
+#logo {
+    width: 120px;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+.area_principal input {
+    margin-top: 5%;
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none; /* Remove a borda padrão do input ao receber foco */
+    font-size: 16px;
+}
+
+.area_principal div {
+    margin-top: 10px;
+    text-align: center; /* Centraliza o texto dentro das divs */
+}
+
+.area_principal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.area_principal button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+}
+
+.area_principal button:hover {
+    background-color: darkblue;
 }
