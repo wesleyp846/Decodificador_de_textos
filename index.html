@@ -8,25 +8,36 @@
 </head>
 <body>
     <main>
+
         <div>
             <img src="/media/logoa.svg" alt="Logo da Alura">
         </div>
-        <div>
-            <textarea name="" id="" cols="90" rows="30"></textarea>
+        <div class="entrada_de_texto">
+            <div class="input">
+                <textarea cols="35" rows="15" placeholder="Digite seu texto aqui"></textarea>
+            </div>
+
+            <div class="botoes_e_alertas">
+                <div class="alerta">
+                    <img src="/media/iconeexclamacao.svg" alt="Icone de exclamação">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <button>Criptografar</button>
+                    <button>Descriptografar</button>
+                </div>    
+            </div>
         </div>
 
-        <div>
-            <img src="/media/iconeexclamacao.svg" alt="Icone de exclamação">
-            <p>Apenas letras minúsculas e sem acento.</p>
-            <button>Criptografar</button>
-            <button>Descriptografar</button>    
-        </div>
-
-        <div>
+        <div class="saida_de_texto">
             <img src="/media/homemelupa.svg" alt="Homem de Lupa">
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+            <div class="saida_de_texto_mensagem">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
         </div>
+
     </main>
 
 
