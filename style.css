@@ -87,6 +87,26 @@ main{
     color: white;
 }
 
+.butao_copiar{
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: 25px;
+    text-align: center;
+    background: #D8DFE8;
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px; 
+}
+
+.butao_copiar:hover {
+    background: var(--cor-primaria);
+    color: white;
+}
+
 .saida_de_texto {
     display: flex;
     flex-direction: column;
