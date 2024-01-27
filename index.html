@@ -8,32 +8,44 @@
 </head>
 <body>
     <main>
-        <div class="div_logo">
-            <img id="logo" src="/Dasafio_decodificador_texto_JavaScript/media/Frame 6.svg" alt="Icone da Alura">
+
+        <div>
+            <img src="/media/logoa.svg" alt="Logo da Alura">
         </div>
-        <div class="area_principal">
-            <input type="text" placeholder="Digite seu texto aqui">
-            <div class="alerta">
-                <img src="/Dasafio_decodificador_texto_JavaScript/media/bi_exclamation-circle-fill.svg" alt="Ponto de exclamação">
-                <p>Apenas letras minúsculas e sem acento.</p>
+        <div class="entrada_de_texto">
+            <div class="input">
+                <textarea id="input-texto" cols="35" rows="15" placeholder="Digite seu texto aqui"></textarea>
             </div>
-            <div class="botoes">
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+
+            <div class="botoes_e_alertas">
+                <div class="alerta">
+                    <img src="/media/iconeexclamacao.svg" alt="Icone de exclamação">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <button onclick="criptografar()">Criptografar</button>
+                    <button onclick="descriptografar()">Descriptografar</button>
+                </div>    
             </div>
         </div>
-        <div class="area_de_saida">
-            <img class="area_de_saida_imagem" src="/Dasafio_decodificador_texto_JavaScript/media/High quality products 1 1.svg" alt="Imagem homem com lupa">
-            <br>
-            <br>
-            <div class="area_de_saida_texto">
-                <h3>Nenhuma mensagem encontrada</h3>
-                <br>
-                <br>
+
+        <div id="divSaida" class="saida_de_texto">
+            <div style="display: none" id="textoComCriptografia">
+                <h3 id="apareci"></h3>
+            </div>
+            <div style="display: block">
+                <img src="/media/homemelupa.svg" alt="Homem de Lupa">
+            </div>
+            <div style="display: block" class="saida_de_texto_mensagem">
+                <h2 id="apareci">Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
+
+            <div style="display: none">
+                <button onclick="botaoCopiar()" class="butao_copiar">Copiar</button>
+            </div>
         </div>
-    </main>
         <script src="app.js" defer></script>
+    </main>
 </body>
 </html>
