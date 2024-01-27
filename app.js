@@ -15,7 +15,7 @@ function descriptografar(){
 
 //Ao apertar o botão copiar ___________________________________________________
 function botaoCopiar(){
-    console.log("faça essa funcao");
+    copiatexto();
 }
 
 function addCrip(crip){
@@ -67,4 +67,20 @@ function descriptografia(texto){
     replaceAll("ufat", "u");
     console.log(mensagem);
     return mensagem;
+}
+
+function copiatexto(){
+    // Remove qualquer seleção anterior da área de transferência
+    window.getSelection().removeAllRanges();
+    let ver = document.getElementById("apareci");
+    let intervalo = document.createRange();
+    intervalo.selectNode(ver);
+    // Adiciona a nova seleção à área de transferência
+    window.getSelection().addRange(intervalo);
+    // Copia o conteúdo selecionado para a área de transferência
+    document.execCommand('copy');
+    alert('Conteúdo copiado para a área de transferência!');
+    console.log(ver);
+    console.log(intervalo);
+    console.log(window.getSelection(), "ultima copia");
 }
