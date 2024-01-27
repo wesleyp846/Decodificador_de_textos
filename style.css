@@ -126,3 +126,15 @@ main{
     margin-top: 20px;
     gap: 20px;
 }
+
+#textoComCriptografia{
+    width: 90%;    
+    height: auto; 
+    padding: 5px;   
+    text-align: center;
+    font-size: 25px;     
+    overflow: hidden;    
+    word-wrap: break-word;
+    border-radius: 32px;
+    background-color: var(---cor-de-fundo);
+}

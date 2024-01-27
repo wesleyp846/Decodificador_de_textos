@@ -16,6 +16,7 @@ function descriptografar(){
 //Ao apertar o botão copiar ___________________________________________________
 function botaoCopiar(){
     copiatexto();
+    exibenatela();
 }
 
 function addCrip(crip){
@@ -37,7 +38,11 @@ function pegaTextoO(){
 function exibenatela(){
     let div = document.querySelector(".saida_de_texto");
     let filhos = div.querySelectorAll("div");
-    filhos.forEach(filho => {
+    alteravisibilidade(filhos);
+}
+
+function alteravisibilidade(lista){
+    lista.forEach(filho => {
         if (filho.style.display == "none"){
             filho.style.display = "block";
         } else {
@@ -65,7 +70,6 @@ function descriptografia(texto){
     replaceAll("ai", "a").
     replaceAll("ober", "o").
     replaceAll("ufat", "u");
-    console.log(mensagem);
     return mensagem;
 }
 
@@ -79,8 +83,4 @@ function copiatexto(){
     window.getSelection().addRange(intervalo);
     // Copia o conteúdo selecionado para a área de transferência
     document.execCommand('copy');
-    alert('Conteúdo copiado para a área de transferência!');
-    console.log(ver);
-    console.log(intervalo);
-    console.log(window.getSelection(), "ultima copia");
 }
