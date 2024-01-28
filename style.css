@@ -38,7 +38,10 @@ main{
 }
 
 .input textarea {
+    width: 600px;
+    height: 700px;
     padding: 10px;
+    margin-top: 100px;
     font-size: 25px;
     border: none;
     border-radius: 32px;
@@ -140,13 +143,36 @@ main{
 }
 
 @media (max-width: 768px) {
-    
+
     main{
         flex-direction: column;
+        border: 1px solid rgb(0, 8, 255);
     }
+
+    textarea{
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+        height: 600px;
+        
+    }
+
+    .input textarea {
+        margin-top: 0px;
+        height: 550px;
+        
+    }
+
+    .input{
+        margin: 0px;
+        padding: 0px;
+    }
+
     .entrada_de_texto{
-        width: 100%;
+        margin-top: 0px;
+        width: 90%;
     }
+
     .saida_de_texto{
         width: 100%;
         height: auto;
@@ -157,7 +183,7 @@ main{
 
     textarea{
         width: 100%;
-        height: 400px;
+        height: 600px;
     }
 
     .input textarea::placeholder {
