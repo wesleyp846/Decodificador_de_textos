@@ -169,6 +169,7 @@ main {
     main {
         padding: 0;
         width: auto;
+        margin-top: 0px;
         align-items: center;
     }
 
@@ -178,6 +179,7 @@ main {
 
     .input textarea{
         width: auto;
+        height: 350px;
     }
 
     .botoes_e_alertas {
