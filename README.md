@@ -12,15 +12,13 @@ A aplicação é `responsiva`, projetada para funcionar em `tablets`, `celulares
 
 A versão atual da aplicação utiliza tecnologias web fundamentais, incluindo `HTML5`, `CSS3` e `JavaScript`. 
 
-No futuro, está previsto o deploy da aplicação através da plataforma `Vercel`.
+Deploy da aplicação através da plataforma `Vercel` em [Encriptex](https://encriptex.vercel.app/).
 
 &nbsp;
 &nbsp;
 ## Versão Atual: v1.0
 &nbsp;
-Na versão v1.0, a aplicação concentra-se na implementação dos requisitos básicos do exercício,
-
-para a `v1.5` pretendemos realizar o deploy na `Vercel`.
+Na versão v1.0, a aplicação concentra-se na implementação dos requisitos básicos do exercício.
 
 &nbsp;
 &nbsp;
@@ -51,6 +49,8 @@ Acesso a `WEB`.
 &nbsp;
 > ###  Implementação
 O `app` é parte de um curso de iniciação em programação. A implementação foi pensada para ser simples para um `iniciante`.
+
+Basta acessar via web o link da aplicação disponível em [Encriptex](https://encriptex.vercel.app/).
 
 &nbsp;
 &nbsp;
