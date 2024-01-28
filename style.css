@@ -1,5 +1,5 @@
-:root{
-    ---cor-de-fundo: #F3F5FC;
+:root {
+    --cor-de-fundo: #F3F5FC;
     --cor-primaria: #0a3871;
 }
 
@@ -10,19 +10,19 @@
 }
 
 body {
-    background-color: var(---cor-de-fundo);
+    background-color: var(--cor-de-fundo);
     font-family: 'Inter', sans-serif;
     height: 100vh;
 }
 
-main{
+main {
     display: flex;
     padding: 40px;
-    justify-content:start;
+    justify-content: start;
     gap: 50px;
 }
 
-.entrada_de_texto{
+.entrada_de_texto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +45,7 @@ main{
     font-size: 25px;
     border: none;
     border-radius: 32px;
-    background-color: var(---cor-de-fundo);
+    background-color: var(--cor-de-fundo);
 }
 
 .input textarea::placeholder {
@@ -58,7 +58,7 @@ main{
     margin-bottom: 70px;
 }
 
-.alerta{
+.alerta {
     display: flex;
     font-size: 21px;
     padding: 10px;
@@ -70,29 +70,9 @@ main{
     gap: 15px;
 }
 
-.botoes button {
+.botoes button,
+.butao_copiar {
     box-sizing: border-box;
-    padding: 10px;
-    gap: 8px;
-    width: 200px;
-    cursor: pointer;
-    border-radius: 24px;
-    font-size: 25px;
-    text-align: center;
-    background: #D8DFE8;
-    color: var(--cor-primaria);
-    border: 1px solid var(--cor-primaria);
-    border-radius: 24px;    
-}
-    
-.botoes button:hover {
-    background: var(--cor-primaria);
-    color: white;
-}
-
-.butao_copiar{
-    box-sizing: border-box;
-    margin-top: 50px;
     padding: 10px;
     width: 200px;
     cursor: pointer;
@@ -102,12 +82,16 @@ main{
     background: #D8DFE8;
     color: var(--cor-primaria);
     border: 1px solid var(--cor-primaria);
-    border-radius: 24px; 
 }
 
+.botoes button:hover,
 .butao_copiar:hover {
     background: var(--cor-primaria);
     color: white;
+}
+
+.butao_copiar {
+    margin-top: 50px;
 }
 
 .saida_de_texto {
@@ -121,7 +105,7 @@ main{
     border-radius: 32px;
 }
 
-.saida_de_texto_mensagem{
+.saida_de_texto_mensagem {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -130,75 +114,87 @@ main{
     gap: 20px;
 }
 
-#textoComCriptografia{
-    width: 90%;    
-    height: auto; 
-    padding: 5px;   
+#textoComCriptografia {
+    width: 90%;
+    height: auto;
+    padding: 5px;
     text-align: center;
-    font-size: 25px;     
-    overflow: hidden;    
+    font-size: 25px;
+    overflow: hidden;
     word-wrap: break-word;
     border-radius: 32px;
-    background-color: var(---cor-de-fundo);
+    background-color: var(--cor-de-fundo);
 }
 
 @media (max-width: 768px) {
-
-    main{
+    main {
         flex-direction: column;
-        border: 1px solid rgb(0, 8, 255);
     }
 
-    textarea{
-        margin: 0px;
-        padding: 0px;
+    textarea {
+        margin: 0;
+        padding: 0;
         justify-content: flex-start;
         height: 600px;
-        
     }
 
     .input textarea {
-        margin-top: 0px;
+        margin-top: 0;
         height: 550px;
-        
     }
 
-    .input{
-        margin: 0px;
-        padding: 0px;
+    .input {
+        margin: 0;
+        padding: 0;
     }
 
-    .entrada_de_texto{
-        margin-top: 0px;
+    .entrada_de_texto {
+        margin-top: 0;
         width: 90%;
     }
 
-    .saida_de_texto{
+    .saida_de_texto {
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-width: 375px) {
-
-    textarea{
-        width: 100%;
-        height: 600px;
-    }
-
-    .input textarea::placeholder {
-        text-align: center;
-        font-size: 20px;
-        color: var(--cor-primaria);
-    }
-
-    .botoes button{
+@media (max-width: 376px) {
+    body {
         width: auto;
-        font-size: 15px;
+        height: auto;
+        padding: 10px;
     }
 
-    .butao_copiar{
-        width: 100px;
-        font-size: 15px;
+    main {
+        padding: 0;
+        width: auto;
+        align-items: center;
+    }
+
+    .entrada_de_texto {
+        width: 95%;
+    }
+
+    .input textarea{
+        width: auto;
+    }
+
+    .botoes_e_alertas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 5px;  
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .botoes button {
+        height: 60px;
     }
 }
