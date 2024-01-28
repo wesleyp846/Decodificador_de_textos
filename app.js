@@ -13,7 +13,6 @@ function descriptografar(){
     exibenatela();
 }
 
-//Ao apertar o botão copiar ___________________________________________________
 function botaoCopiar(){
     copiatexto();
     exibenatela();
@@ -26,6 +25,8 @@ function addCrip(crip){
 
 function pegaTextoI(){
     let texto = document.getElementById("input-texto").value;
+    texto = texto.toLowerCase();
+    console.log(texto, "debugando minuscuas")
     return texto;
 }
 
