@@ -48,19 +48,32 @@ p {
     border: 2px solid #bbb;
     border-radius: 20px;
     top: 10px;
-    right: 10px;
+    right: 60px;
     transition: all 300ms ease-in-out;
 }
 
 .dark-mode-toggler div {
+    position: absolute;
     width: 12px;
     height: 12px;
     background: deeppink;
     border-radius: 50%;
-    position: absolute;
     top: 2px;
     left: 2px;
     transition: all 300ms ease-in-out;
+}
+
+#light {
+    position: absolute;
+    top: -2px;
+    right: 50px;
+    color: deeppink;
+}
+#dark {
+    position: absolute;
+    top: -2px;
+    right: -45px;
+    color: deeppink;
 }
 
 .dark-mode-input:checked ~ .dark-mode-toggler {
@@ -70,6 +83,14 @@ p {
 .dark-mode-input:checked ~ .dark-mode-toggler div {
     background: #ccc;
     left: 21px;
+}
+
+.dark-mode-input:checked ~ .dark-mode-toggler #light{
+    color: #ccc;
+}
+
+.dark-mode-input:checked ~ .dark-mode-toggler #dark {
+    color: #ccc;
 }
 
 /*
