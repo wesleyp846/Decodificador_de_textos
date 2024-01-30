@@ -31,43 +31,23 @@
                         <textarea class="text_area" id="input-texto" resize: none wrap="hard" placeholder="Texto para cifrar aqui"></textarea>
                     </div>
                     <div>
-                        <button>Criptografar</button>
+                        <button onclick="criptografar('input-texto')">Criptografar</button>
+                        <button onclick="addTexto()">addtexto</button>
                     </div>
                 </div>
                 <div class="saida">
                     <div>
-                        <textarea class="text_area" id="input-texto" resize: none wrap="hard" placeholder="Texto para decriptar aqui"></textarea>
+                        <textarea class="text_area" id="output-texto" resize: none wrap="hard" placeholder="Texto para decriptar aqui"></textarea>
                     </div>
                     <div>
-                        <button>Descriptografar</button>
+                        <button onclick="pegaTexto('output-texto')">Descriptografar</button>
                     </div>
                 </div>
             </div>
-            <script src="pessoal.js" defer></script>
         </main>
         <footer><p>© 2024 Wesley Pereira</p></footer>
     </section>
     </div>
-    
-<!--
-
-<body>
-    <main>
-        <div>
-        <h1>Encriptex</h1>
-        </div>
-        <div>
-            <input type="text">
-        </div>
-        <div>
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
-        </div>
-        <div>
-            <p>texto cifrado</p>
-        </div>
-        <script src="pessoal.js" defer></script>
-    </main>
--->
+<script src="pessoal.js" defer></script>
 </body>
 </html>
