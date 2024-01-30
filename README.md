@@ -3,7 +3,7 @@
 > Linguagens em `HTML5`, `CSS3` e `JavaScript`.
 
 &nbsp;
-## Introdução
+## Introdução (Projeto ativo)
 Bem-vindo à documentação da aplicação `Encriptex`, uma ferramenta simples de `criptografia` e `descriptografia` desenvolvida por [Wesley Pereira](https://github.com/wesleyp846).
 
 Esta aplicação foi criada no contexto da bolsa do curso da [Oracle](https://www.oracle.com/br/), [Alura](https://www.alura.com.br/) e [Ifood](https://www.ifood.com.br/), com foco em `programadores iniciantes`. 
