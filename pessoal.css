@@ -160,3 +160,8 @@ p {
 .dark-mode-input:checked ~ .dark-mode-toggler #dark {
     color: var(--cor-fundo-light);
 }
+
+.dark-mode-input:checked ~ .page .text_area {
+    background: var(--cor-fundo-dark);
+    color: var(--cor-texto-light);
+}
