@@ -1,21 +1,13 @@
 //Esse TexTo TeM MuiTAs LETRAS EMBARALHADAS 
 
-// function criptografar(){
-//   crip = criptografia(pegaTextoI());
-//   addCrip(crip);
-//   exibenatela();
-// }
-
-// function addCrip(crip){
-//   let surge = document.getElementById("apareci");
-//   surge.innerHTML = crip;
-// }
-
-
 function criptografar(texto){
   let crip = criptografia(pegaTexto(texto));
   addTexto(crip);
   console.log(crip, "\n\nfun criptografar var crip");
+}
+
+function copiar(){
+  console.log("fun copiar");
 }
 
 function addTexto(crip){
