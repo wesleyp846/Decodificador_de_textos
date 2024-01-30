@@ -30,17 +30,18 @@
                     <div>
                         <textarea class="text_area" id="input-texto" resize: none wrap="hard" placeholder="Texto para cifrar aqui"></textarea>
                     </div>
-                    <div>
+                    <div class="botoes">
                         <button onclick="criptografar('input-texto')">Criptografar</button>
-                        <button onclick="addTexto()">addtexto</button>
+                        <button onclick="copiar()">Copiar</button>
                     </div>
                 </div>
                 <div class="saida">
                     <div>
                         <textarea class="text_area" id="output-texto" resize: none wrap="hard" placeholder="Texto para decriptar aqui"></textarea>
                     </div>
-                    <div>
+                    <div class="botoes">
                         <button onclick="pegaTexto('output-texto')">Descriptografar</button>
+                        <button onclick="copiar()">Copiar</button>
                     </div>
                 </div>
             </div>
