@@ -80,8 +80,8 @@ main h1 {
     height: 2.5em;
     text-align: center;
     border-radius: 32px;   
-    background-color: var(--cor-fundo-dark);
-    color: var(--cor-texto-light);
+    background-color: var(--cor-fundo-light);
+    color: var(--cor-texto-dark);
 }
 
 .entrada_e_saida button:hover {
@@ -110,15 +110,6 @@ footer{
     justify-items: flex-end;
     padding: 1em;
 }
-
-/* switch de modo dark
-footer p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 1em;
-    text-align: start;
-}*/
 
 /* switch de modo dark*/
 .page {
@@ -186,6 +177,11 @@ footer p {
 }
 
 .dark-mode-input:checked ~ .page .text_area {
+    background: var(--cor-fundo-dark);
+    color: var(--cor-texto-light);
+}
+
+.dark-mode-input:checked ~ .page .entrada_e_saida button {
     background: var(--cor-fundo-dark);
     color: var(--cor-texto-light);
 }
