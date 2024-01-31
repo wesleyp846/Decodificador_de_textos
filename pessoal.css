@@ -29,7 +29,7 @@ body {
 }
 
 .container{
-    max-width: 800px;
+    max-width: 790px;
     margin: 0 auto;
 }
 
@@ -98,7 +98,9 @@ main h1 {
 }
 
 p {
-    margin: 1em 0;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 1em;
 }
 
 
