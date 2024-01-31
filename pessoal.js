@@ -2,16 +2,16 @@
 
 function criptografar(texto){
   let crip = criptografia(pegaTexto(texto));
-  addTexto(crip);
-  console.log(crip, "\n\nfun criptografar var crip");
+  addTexto(crip, 'output-texto');
 }
 
-function copiar(){
-  console.log("fun copiar");
+function descriptografar(texto){
+  let crip = descriptografia(pegaTexto(texto));
+  addTexto(crip, 'input-texto');
 }
 
-function addTexto(crip){
-  document.getElementById('output-texto').value = crip;
+function addTexto(crip, lugar){
+  document.getElementById(lugar).value = crip;
 }
 
 function pegaTexto(idtexto){
@@ -48,4 +48,14 @@ function descriptografia(texto){
   replaceAll("ober", "o").
   replaceAll("ufat", "u");
   return mensagem;
+}
+
+function copiar(areaDeCopy){
+  let texto = document.getElementById(areaDeCopy).value;
+  let areaDeTransferencia = document.createElement("textarea");
+  areaDeTransferencia.value = texto;
+  document.body.appendChild(areaDeTransferencia);
+  areaDeTransferencia.select();
+  document.execCommand("copy");
+  document.body.removeChild(areaDeTransferencia);
 }
