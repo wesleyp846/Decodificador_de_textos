@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pessoal.css">
+    <title>Encriptex</title>
+</head>
+<body>
+    <input type="checkbox" class="dark-mode-input" id="dark-mode-input" style="display: none">
+    <label for="dark-mode-input" class="dark-mode-toggler">
+        <span id="dark">Dark</span>
+        <div></div>
+        <span id="light">Light</span>           
+    </label>
+    <div class="page">
+    <section class="container">
+        <header class="title">
+            <h1 class="main-page-title">
+                <a href="index.html">Versão Alura</a>
+            </h1>
+            <hr>
+        </header>
+        <main>
+            <div>
+            <h1>Encriptex</h1>
+            </div>
+            <div class="entrada_e_saida">
+                <div class="entrada">
+                    <div>
+                        <textarea class="text_area" id="input-texto" resize: none wrap="hard" placeholder="Texto para cifrar aqui"></textarea>
+                    </div>
+                    <div class="botoes">
+                        <button onclick="criptografar('input-texto')">Criptografar</button>
+                        <button onclick="copiar('input-texto')">Copiar</button>
+                    </div>
+                </div>
+                <div class="saida">
+                    <div>
+                        <textarea class="text_area" id="output-texto" resize: none wrap="hard" placeholder="Texto para decriptar aqui"></textarea>
+                    </div>
+                    <div class="botoes">
+                        <button onclick="descriptografar('output-texto')">Descriptografar</button>
+                        <button onclick="copiar('output-texto')">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer><p>© 2024 Wesley Pereira</p></footer>
+    </section>
+    </div>
+<script src="pessoal.js" defer></script>
+</body>
+</html>
