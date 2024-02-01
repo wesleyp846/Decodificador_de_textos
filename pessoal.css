@@ -103,13 +103,20 @@ main h1 {
     justify-content: space-between;
 }
 
-footer{
+/* footer{
     display: flex;
     height: auto;
     align-self: flex-start;
     justify-items: flex-end;
     padding: 1em;
     margin-top: -2em;
+} */
+
+footer .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 
 /* switch de modo dark*/
