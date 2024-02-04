@@ -11,6 +11,9 @@
 
 &nbsp;
 ## Introdução
+
+<p align="justify">
+   
 Bem-vindo à documentação da aplicação `Encriptex`, uma ferramenta simples de `criptografia` e `descriptografia` desenvolvida por [Wesley Pereira](https://github.com/wesleyp846).
 
 Esta aplicação foi criada no contexto da bolsa do curso da [Oracle](https://www.oracle.com/br/), [Alura](https://www.alura.com.br/) e [Ifood](https://www.ifood.com.br/), com foco em `programadores iniciantes`. 
@@ -20,6 +23,8 @@ A aplicação é `responsiva`, projetada para funcionar em `tablets`, `celulares
 A versão atual da aplicação utiliza tecnologias web fundamentais, incluindo `HTML5`, `CSS3` e `JavaScript`. 
 
 Deploy da aplicação é mantido através da plataforma `Vercel` em [Encriptex](https://encriptex.vercel.app/).
+
+</p>
 
 &nbsp;
 &nbsp;
