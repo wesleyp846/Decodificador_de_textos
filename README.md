@@ -1,9 +1,16 @@
 # ENCRIPTEX Decodificador e Encriptador de textos
 
+<p align="center">
+   <img src="https://img.shields.io/badge/ STATUS-LANÇADO(desenvolvido)-brightgreen"/>
+</p>
+<p align="center">
+   <img src="https://img.shields.io/badge/ STATUS-EM PRODUÇÃO-brightgreen"/>
+</p>
+
 > Linguagens em `HTML5`, `CSS3` e `JavaScript`.
 
 &nbsp;
-## Introdução `Projeto Terminado`
+## Introdução
 Bem-vindo à documentação da aplicação `Encriptex`, uma ferramenta simples de `criptografia` e `descriptografia` desenvolvida por [Wesley Pereira](https://github.com/wesleyp846).
 
 Esta aplicação foi criada no contexto da bolsa do curso da [Oracle](https://www.oracle.com/br/), [Alura](https://www.alura.com.br/) e [Ifood](https://www.ifood.com.br/), com foco em `programadores iniciantes`. 
